@@ -3,6 +3,7 @@ MCP component for MCP server integration
 """
 
 import subprocess
+import sys
 import json
 from typing import Dict, List, Tuple, Any
 from pathlib import Path
@@ -83,7 +84,8 @@ class MCPComponent(Component):
                 ["node", "--version"], 
                 capture_output=True, 
                 text=True, 
-                timeout=10
+                timeout=10,
+                shell=(sys.platform == "win32")
             )
             if result.returncode != 0:
                 errors.append("Node.js not found - required for MCP servers")
@@ -107,7 +109,8 @@ class MCPComponent(Component):
                 ["claude", "--version"], 
                 capture_output=True, 
                 text=True, 
-                timeout=10
+                timeout=10,
+                shell=(sys.platform == "win32")
             )
             if result.returncode != 0:
                 errors.append("Claude CLI not found - required for MCP server management")
@@ -123,7 +126,8 @@ class MCPComponent(Component):
                 ["npm", "--version"], 
                 capture_output=True, 
                 text=True, 
-                timeout=10
+                timeout=10,
+                shell=(sys.platform == "win32")
             )
             if result.returncode != 0:
                 errors.append("npm not found - required for MCP server installation")
@@ -168,7 +172,8 @@ class MCPComponent(Component):
                 ["claude", "mcp", "list"], 
                 capture_output=True, 
                 text=True, 
-                timeout=15
+                timeout=15,
+                shell=(sys.platform == "win32")
             )
             
             if result.returncode != 0:
@@ -217,20 +222,21 @@ class MCPComponent(Component):
             
             # Install using Claude CLI
             if config.get("dry_run", False):
-                self.logger.info(f"Would install MCP server: claude mcp add {server_name} {command}")
+                self.logger.info(f"Would install MCP server (user scope): claude mcp add -s user {server_name} {command}")
                 return True
             
-            self.logger.debug(f"Running: claude mcp add {server_name} {command}")
+            self.logger.debug(f"Running: claude mcp add -s user {server_name} {command}")
             
             result = subprocess.run(
-                ["claude", "mcp", "add", server_name, command],
+                ["claude", "mcp", "add", "-s", "user", server_name, command],
                 capture_output=True,
                 text=True,
-                timeout=120  # 2 minutes timeout for installation
+                timeout=120,  # 2 minutes timeout for installation
+                shell=(sys.platform == "win32")
             )
             
             if result.returncode == 0:
-                self.logger.success(f"Successfully installed MCP server: {server_name}")
+                self.logger.success(f"Successfully installed MCP server (user scope): {server_name}")
                 return True
             else:
                 error_msg = result.stderr.strip() if result.stderr else "Unknown error"
@@ -254,13 +260,14 @@ class MCPComponent(Component):
                 self.logger.info(f"MCP server {server_name} not installed")
                 return True
             
-            self.logger.debug(f"Running: claude mcp remove {server_name}")
+            self.logger.debug(f"Running: claude mcp remove {server_name} (auto-detect scope)")
             
             result = subprocess.run(
                 ["claude", "mcp", "remove", server_name],
                 capture_output=True,
                 text=True,
-                timeout=60
+                timeout=60,
+                shell=(sys.platform == "win32")
             )
             
             if result.returncode == 0:
@@ -336,7 +343,8 @@ class MCPComponent(Component):
                         ["claude", "mcp", "list"],
                         capture_output=True,
                         text=True,
-                        timeout=15
+                        timeout=15,
+                        shell=(sys.platform == "win32")
                     )
                     
                     if result.returncode == 0:
@@ -478,7 +486,8 @@ class MCPComponent(Component):
                 ["claude", "mcp", "list"],
                 capture_output=True,
                 text=True,
-                timeout=15
+                timeout=15,
+                shell=(sys.platform == "win32")
             )
             
             if result.returncode != 0:
