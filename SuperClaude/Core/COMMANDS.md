@@ -131,6 +131,14 @@ performance-profile: "optimization"
 
 **`/design [domain] [flags]`** - Design orchestration | Auto-Persona: Architect, Frontend | MCP: Magic, Sequential, Context7
 
+### Creative & Innovation Commands
+
+**`/brainstorm [topic] [flags]`** - Structured creative ideation with memory persistence | Auto-Persona: Brainstormer | MCP: Memory, Sequential
+
+**`/ideate [challenge] [flags]`** - Challenge-focused innovation with constraint-based creativity | Auto-Persona: Brainstormer, Facilitator | MCP: Memory, Sequential
+
+**`/synthesize [ideas] [flags]`** - Pattern recognition and idea combination specialist | Auto-Persona: Synthesizer | MCP: Memory, Context7
+
 ### Meta & Orchestration Commands
 
 **`/index [query] [flags]`** - Command catalog browsing | Auto-Persona: Mentor, Analyzer | MCP: Sequential
@@ -158,6 +166,7 @@ complex: "Resource-intensive with comprehensive analysis"
 - **Documentation**: document
 - **Planning**: estimate, task
 - **Version-Control**: git
+- **Creative**: brainstorm, ideate, synthesize
 - **Meta**: index, load, spawn
 
 ### Wave-Enabled Commands
