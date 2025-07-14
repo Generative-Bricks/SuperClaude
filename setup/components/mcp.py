@@ -53,6 +53,14 @@ class MCPComponent(Component):
                 "npm_package": "@modelcontextprotocol/server-playwright",
                 "command": "npx @modelcontextprotocol/server-playwright",
                 "required": False
+            },
+            "memory": {
+                "name": "memory",
+                "description": "Persistent memory for cross-session context and idea evolution",
+                "npm_package": "@modelcontextprotocol/server-memory",
+                "command": "npx @modelcontextprotocol/server-memory",
+                "required": False,
+                "brainstorming_enhanced": True
             }
         }
     

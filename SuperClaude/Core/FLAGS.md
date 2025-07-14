@@ -214,8 +214,54 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 9. Loop mode: explicit --loop > auto-detection based on refinement keywords
 10. --uc auto-activation overrides verbose flags
 
+## Creative & Brainstorming Flags
+
+**`--brainstorm-mode [rapid|structured|memory-enhanced]`**
+- **rapid**: Quick idea generation without judgment (5-10 min bursts)
+- **structured**: Framework-guided ideation with proven methodologies
+- **memory-enhanced**: Builds on previous sessions and successful patterns
+- Auto-activates: brainstormer persona + Memory MCP
+
+**`--creativity-level [conservative|moderate|wild]`**
+- **conservative**: Practical, feasible ideas with implementation focus
+- **moderate**: Balanced creativity and practicality
+- **wild**: Blue-sky thinking, constraint-free innovation
+- Auto-activates: brainstormer persona with appropriate thinking depth
+
+**`--ideation-framework [scamper|six-hats|design-thinking|brainwriting]`**
+- **scamper**: Substitute, Combine, Adapt, Modify, Put to other use, Eliminate, Reverse
+- **six-hats**: White, Red, Black, Yellow, Green, Blue thinking perspectives
+- **design-thinking**: Empathize, Define, Ideate, Prototype, Test methodology
+- **brainwriting**: Silent idea generation followed by collaborative building
+- Auto-activates: facilitator persona + Sequential MCP
+
+**`--memory-context [remember|fresh|selective]`**
+- **remember**: Use all previous brainstorming context and patterns
+- **fresh**: Start clean without memory influence for unbiased thinking
+- **selective**: Choose specific memories to include in current session
+- Auto-activates: Memory MCP server integration
+
+**`--perspective-shift [user|competitor|expert|beginner|opposite]`**
+- Forces viewpoint changes during ideation
+- **user**: Customer/end-user perspective focus
+- **competitor**: Competitive analysis and differentiation
+- **expert**: Domain specialist deep knowledge approach
+- **beginner**: Fresh eyes, naive questions approach
+- **opposite**: Contrarian thinking, challenge assumptions
+- Auto-activates: synthesizer persona for cross-domain connections
+
+**`--constraint-creativity [budget|time|technology|resources|ethics]`**
+- Use limitations as innovation catalysts
+- **budget**: Cost-conscious creative solutions
+- **time**: Rapid iteration and quick wins
+- **technology**: Work within current tech stack
+- **resources**: Optimize for available team/tools
+- **ethics**: Ensure responsible innovation
+- Auto-activates: brainstormer persona with constraint-based thinking
+
 ### Context-Based Auto-Activation
 
 **Wave Auto-Activation**: complexity ≥0.7 AND files >20 AND operation_types >2
 **Sub-Agent Auto-Activation**: >7 directories OR >50 files OR complexity >0.8
 **Loop Auto-Activation**: polish, refine, enhance, improve keywords detected
+**Brainstorming Auto-Activation**: "brainstorm", "ideate", "creative", "innovate", "possibilities" keywords detected
