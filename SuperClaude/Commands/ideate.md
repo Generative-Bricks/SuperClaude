@@ -3,7 +3,7 @@ allowed-tools: [Read, Write, TodoWrite, Grep, Glob]
 description: "Challenge-focused innovation with constraint-based creativity"
 ---
 
-# /ideate - Challenge-Focused Innovation
+# /sc:ideate - Challenge-Focused Innovation
 
 ## Purpose
 Generate breakthrough solutions for specific challenges using constraint-based creativity and cross-domain thinking.

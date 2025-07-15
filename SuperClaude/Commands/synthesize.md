@@ -3,7 +3,7 @@ allowed-tools: [Read, Write, TodoWrite, Grep, Glob]
 description: "Combine and refine ideas into cohesive innovative solutions"
 ---
 
-# /synthesize - Idea Integration & Refinement
+# /sc:synthesize - Idea Integration & Refinement
 
 ## Purpose
 Combine multiple ideas, concepts, or solutions into cohesive, innovative approaches using pattern recognition and cross-domain thinking.

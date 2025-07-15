@@ -3,7 +3,7 @@ allowed-tools: [Read, Write, TodoWrite, Grep, Glob]
 description: "Structured creative ideation with memory persistence and framework guidance"
 ---
 
-# /brainstorm - Creative Ideation Engine
+# /sc:brainstorm - Creative Ideation Engine
 
 ## Purpose
 Generate innovative solutions using structured creativity frameworks with persistent memory and cross-session learning.
