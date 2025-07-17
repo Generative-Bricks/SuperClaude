@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash]
 description: "Provide development estimates for tasks, features, or projects"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:estimate - Development Estimation
 

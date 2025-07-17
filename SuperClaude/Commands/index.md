@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash, Write]
 description: "Generate comprehensive project documentation and knowledge base"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:index - Project Documentation
 

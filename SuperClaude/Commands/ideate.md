@@ -2,6 +2,9 @@
 allowed-tools: [Read, Write, TodoWrite, Grep, Glob]
 description: "Challenge-focused innovation with constraint-based creativity"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:ideate - Challenge-Focused Innovation
 

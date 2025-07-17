@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-SuperClaude is a framework that extends Claude Code with specialized commands, personas, and MCP server integration. It provides 15 specialized commands, smart personas that adapt behavior for different domains, and MCP server integration for enhanced capabilities.
+SuperClaude is a framework that extends Claude Code with specialized commands, personas, and MCP server integration. It provides 19 specialized commands, smart personas that adapt behavior for different domains, and MCP server integration for enhanced capabilities.
 
 **Architecture**: Python-based framework with modular installation system, comprehensive documentation, and integrated MCP server orchestration.
 
@@ -57,8 +57,8 @@ python3 -c "from setup.core.config_manager import ConfigManager; cm = ConfigMana
 
 **SuperClaude/Core/**: Framework behavior documentation that guides Claude Code:
 - `CLAUDE.md`: Entry point referencing all other core files
-- `COMMANDS.md`: 15 specialized command definitions and execution framework
-- `PERSONAS.md`: 11 domain-specific AI personalities with auto-activation
+- `COMMANDS.md`: 19 specialized command definitions and execution framework
+- `PERSONAS.md`: 14 domain-specific AI personalities with auto-activation
 - `MCP.md`: Integration with Context7, Sequential, Magic, and Playwright servers
 - `FLAGS.md`: Command flags and auto-activation patterns
 - `ORCHESTRATOR.md`: Intelligent routing and decision-making system

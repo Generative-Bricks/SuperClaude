@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash]
 description: "Provide clear explanations of code, concepts, or system behavior"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:explain - Code and Concept Explanation
 

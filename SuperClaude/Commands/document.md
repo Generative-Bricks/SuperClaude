@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Write, Edit]
 description: "Create focused documentation for specific components or features"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:document - Focused Documentation
 

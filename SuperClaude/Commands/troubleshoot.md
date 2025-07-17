@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash, TodoWrite]
 description: "Diagnose and resolve issues in code, builds, or system behavior"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:troubleshoot - Issue Diagnosis and Resolution
 

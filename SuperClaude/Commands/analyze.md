@@ -1,6 +1,9 @@
 ---
 allowed-tools: [Read, Grep, Glob, Bash, TodoWrite]
 description: "Analyze code quality, security, performance, and architecture"
+wave-enabled: true
+complexity-threshold: 0.7
+performance-profile: complex
 ---
 
 # /sc:analyze - Code Analysis

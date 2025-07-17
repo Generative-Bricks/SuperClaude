@@ -1,6 +1,9 @@
 ---
 allowed-tools: [Read, Write, Edit, MultiEdit, Bash, Glob, TodoWrite, Task]
 description: "Feature and code implementation with intelligent persona activation and MCP integration"
+wave-enabled: true
+complexity-threshold: 0.7
+performance-profile: standard
 ---
 
 # /sc:implement - Feature Implementation

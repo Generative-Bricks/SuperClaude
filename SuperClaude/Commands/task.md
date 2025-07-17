@@ -4,8 +4,6 @@ description: "Execute complex tasks with intelligent workflow management and cro
 wave-enabled: true
 complexity-threshold: 0.7
 performance-profile: complex
-personas: [architect, analyzer, project-manager]
-mcp-servers: [sequential, context7]
 ---
 
 # /sc:task - Enhanced Task Management

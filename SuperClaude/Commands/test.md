@@ -2,6 +2,9 @@
 allowed-tools: [Read, Bash, Glob, TodoWrite, Edit, Write]
 description: "Execute tests, generate test reports, and maintain test coverage"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:test - Testing and Quality Assurance
 

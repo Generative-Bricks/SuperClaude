@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash, TodoWrite, Edit, MultiEdit, Write]
 description: "Break complex tasks into coordinated subtasks with efficient execution"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:spawn - Task Orchestration
 

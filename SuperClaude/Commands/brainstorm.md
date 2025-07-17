@@ -1,6 +1,9 @@
 ---
 allowed-tools: [Read, Write, TodoWrite, Grep, Glob]
 description: "Structured creative ideation with memory persistence and framework guidance"
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 ---
 
 # /sc:brainstorm - Creative Ideation Engine

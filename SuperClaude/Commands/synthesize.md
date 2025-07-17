@@ -2,6 +2,9 @@
 allowed-tools: [Read, Write, TodoWrite, Grep, Glob]
 description: "Combine and refine ideas into cohesive innovative solutions"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:synthesize - Idea Integration & Refinement
 

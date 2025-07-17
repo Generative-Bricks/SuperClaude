@@ -1,6 +1,9 @@
 ---
 allowed-tools: [Read, Grep, Glob, Edit, MultiEdit, TodoWrite]
 description: "Apply systematic improvements to code quality, performance, and maintainability"
+wave-enabled: true
+complexity-threshold: 0.7
+performance-profile: optimization
 ---
 
 # /sc:improve - Code Improvement

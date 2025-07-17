@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash, Edit, MultiEdit]
 description: "Clean up code, remove dead code, and optimize project structure"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:cleanup - Code and Project Cleanup
 

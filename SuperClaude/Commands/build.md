@@ -1,6 +1,9 @@
 ---
 allowed-tools: [Read, Bash, Glob, TodoWrite, Edit]
 description: "Build, compile, and package projects with error handling and optimization"
+wave-enabled: true
+complexity-threshold: 0.7
+performance-profile: optimization
 ---
 
 # /sc:build - Project Building

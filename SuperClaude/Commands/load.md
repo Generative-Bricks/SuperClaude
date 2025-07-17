@@ -2,6 +2,9 @@
 allowed-tools: [Read, Grep, Glob, Bash, Write]
 description: "Load and analyze project context, configurations, and dependencies"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:load - Project Context Loading
 

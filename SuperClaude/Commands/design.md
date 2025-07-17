@@ -1,6 +1,9 @@
 ---
 allowed-tools: [Read, Grep, Glob, Write, Edit, TodoWrite]
 description: "Design system architecture, APIs, and component interfaces"
+wave-enabled: true
+complexity-threshold: 0.7
+performance-profile: standard
 ---
 
 # /sc:design - System and Component Design

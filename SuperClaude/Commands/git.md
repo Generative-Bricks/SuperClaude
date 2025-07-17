@@ -2,6 +2,9 @@
 allowed-tools: [Bash, Read, Glob, TodoWrite, Edit]
 description: "Git operations with intelligent commit messages and branch management"
 ---
+wave-enabled: false
+complexity-threshold: 0.5
+performance-profile: standard
 
 # /sc:git - Git Operations
 
